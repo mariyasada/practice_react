@@ -1,0 +1,83 @@
+.leftSidebar{
+    /* width:20%; */
+    background-color: var(--sidebar-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: width .5s;
+}
+.leftSiderbarwithtransition{
+    /* width: 3%; */
+    transition: width .5s;
+   
+}
+
+.bars{
+    display: flex;
+    align-items: self-start;
+    padding: 10px;
+    cursor: pointer;
+}
+.newChatbutton{
+    display: flex;
+    align-items: self-start;
+    margin-top: 2rem;
+
+}
+.newChatbutton > button{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap:10px;
+ outline: none;
+ background: rgb(235, 230, 230);
+ padding: 10px;
+ border-radius: 20px;
+ border: none;
+ cursor: pointer;
+ font-weight: bold;
+} 
+.recentText{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 4px;
+    font-weight: 500;
+}
+.chatDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    justify-content: center;
+}
+.chatDiv > .chat{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.chatConstants{
+  position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left:1rem ;
+    gap:8px;
+    bottom: 2rem;
+}
+.chatConstants > .singleConstantdata{
+   display: flex;
+   gap:8px;
+}
+.details{
+    font-size: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left:20px ;
+}
+.ipDetails{
+    color:blue
+}

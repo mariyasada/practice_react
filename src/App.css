@@ -1,6 +1,14 @@
 .App {
   text-align: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  
 }
+:root{
+  --sidebar-color:#f8fafc;
+}
+
 
 .App-logo {
   height: 40vmin;
