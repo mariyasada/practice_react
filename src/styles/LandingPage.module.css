@@ -1,0 +1,133 @@
+.landingpage{
+    height: 100%;
+    width: 100%;
+    
+}
+.headerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 56px;
+    /* margin-left: -50px; */
+    width: 95%;
+}
+.topnavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.logonav{
+    display: flex;
+    align-items: center;
+    width: 10rem;
+height: 2.563rem;
+margin-left:11.938rem;
+
+}
+.logonav>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 41px;
+    width: 41px;
+    border-radius: 50%;
+    background: #458FF6;
+    font-family: Mulish;
+    color: white;
+font-size: 26px;
+font-weight: 700;
+line-height: 32.63px;
+text-align: left;
+
+}
+.logonav>span{
+    margin-left: 10px;
+    width: 6.7rem;
+height: 30px;
+font-family: Mulish;
+font-size: 24px;
+font-weight: 700;
+line-height: 30.12px;
+text-align: left;
+color: #233348;
+}
+.rightmenu{
+    width:34.063rem;
+height: 23px;
+display: flex;
+gap:20px;
+font-family: Mulish;
+font-size: 18px;
+font-weight: 400;
+line-height: 22.59px;
+text-align: left;
+color: #1F1534;
+
+}
+.leftsideicon{
+position: absolute;
+width: 131.58px;
+height: 115px;
+top: 160px;
+left:-25px;
+
+}
+.headerImageDiv{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12.5rem;
+    width: 90%;
+}
+.headerText{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 27.81rem;
+height: 21.125rem;
+
+}
+.headerText>h4{
+    margin-top: 0px; 
+    width: 427px;
+    height: 112px;
+    font-family: Mulish;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+        
+}
+.headerText>p{
+width: 445px;
+height: 96px;
+margin-top: -20px;
+font-family: Mulish;
+font-size: 21px;
+font-weight: 300;
+line-height: 32px;
+text-align: left;
+color: #7D7987;
+
+
+}
+.headerText>button{
+    width: 200px;
+height: 56px;
+border-radius: 55px;
+opacity: 0px;
+background: #458FF6;
+color: white;
+font-family: Mulish;
+font-size: 18px;
+font-weight: 700;
+line-height: 60px;
+text-align: left;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+cursor: pointer;
+}
