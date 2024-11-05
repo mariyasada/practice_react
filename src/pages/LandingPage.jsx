@@ -1,15 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style1 from "../styles/LandingPage.module.css";
 import LeftsidebarImage from "../svgs/LeftsidebarImage";
 import HeartImage from "../svgs/HeartImage";
-import { services } from "../constants";
+import { carouselData, services } from "../constants";
 import RightbarImage from "../svgs/RightbarImage";
 import BackgroundFrame from "../svgs/BackgroundFrame";
 import LeadingHealthCare from "../svgs/LeadingHealthCare";
 import { FaArrowDownLong } from "react-icons/fa6";
 import AppsImage from "../svgs/AppsImage";
+import Rightdots from "../svgs/Rightdots";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { GoDot, GoDotFill } from "react-icons/go";
 
 const LandingPage = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) =>
+        prevIndex === carouselData.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [carouselData.length]);
+
+  const nextClickHandler = () => {
+    if (activeIndex === carouselData.length - 1) {
+      setActiveIndex(0);
+    }
+    setActiveIndex((prev) => prev + 1);
+  };
+  const previousClickHandler = () => {
+    if (activeIndex === 0) {
+      setActiveIndex(carouselData.length - 1);
+    }
+    setActiveIndex((prev) => prev - 1);
+  };
+  console.log(activeIndex, "check index");
+
   return (
     <div className={style1.landingpage}>
       <div className={style1.headerDiv}>
@@ -132,6 +161,78 @@ const LandingPage = () => {
         </div>
       </div>
       {/*  gradient wala div */}
+      <div className={style1.gradientDiv}>
+        <div className={style1.innerDiv} style={{ position: "relative" }}>
+          <h4>What our customer are saying</h4>
+          <span
+            className={style1.underline}
+            style={{ top: "25%", left: "47%", border: "2px solid white" }}
+          ></span>
+          {carouselData?.map(
+            (data, index) =>
+              activeIndex === index && (
+                <div className={`${style1.testimonialDetails}`} key={data.name}>
+                  <div className={style1.imageDiv}>
+                    <div>
+                      <img src={data.img} alt="client_image" />
+                    </div>
+                    <div className={style1.details}>
+                      <span className={style1.founder}>{data.name}</span>
+                      <span className={style1.designation}>
+                        {data.designation}
+                      </span>
+                    </div>
+                  </div>
+                  <div className={style1.detailsclient}>
+                    <p>{data.text}</p>
+                  </div>
+                </div>
+              )
+          )}
+          <div style={{ top: "2.5%", position: "absolute", right: "-4.8%" }}>
+            <Rightdots />
+          </div>
+          <div
+            style={{
+              bottom: "10%",
+              position: "absolute",
+              left: "-6%",
+              zIndex: "-3",
+            }}
+          >
+            <LeftsidebarImage />
+          </div>
+        </div>
+        <div className={style1.navigation}>
+          <FaArrowLeftLong
+            style={{
+              marginRight: "3rem",
+              opacity: activeIndex === 0 && "0.4",
+              cursor: activeIndex === 0 && "not-allowed",
+            }}
+            onClick={activeIndex !== 0 ? previousClickHandler : () => null}
+          />
+          {[0, 1, 2, 3].map((number) => {
+            return number === activeIndex ? (
+              <GoDotFill key={number} />
+            ) : (
+              <GoDot key={number} />
+            );
+          })}
+          <FaArrowRightLong
+            style={{
+              marginLeft: "3rem",
+              opacity: activeIndex === carouselData.length - 1 && "0.4",
+              cursor: activeIndex === carouselData.length - 1 && "not-allowed",
+            }}
+            onClick={
+              activeIndex !== carouselData.length - 1
+                ? nextClickHandler
+                : () => null
+            }
+          />
+        </div>
+      </div>
     </div>
   );
 };

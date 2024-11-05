@@ -37,3 +37,30 @@ export const services = [
     text: "Track and save your medical history and health data",
   },
 ];
+
+export const carouselData = [
+  {
+    img: "https://images.unsplash.com/photo-1730343464315-a9ca01f9f1c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Mariya Sada",
+    designation: "Fouder circle",
+    text: "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1730343464315-a9ca01f9f1c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Edward Newgate",
+    designation: "Fouder circle",
+    text: "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1730343464315-a9ca01f9f1c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Pooja Shah",
+    designation: "Fouder circle",
+    text: "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1730343464315-a9ca01f9f1c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Krushna",
+    designation: "Fouder circle",
+    text: "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
+  },
+];

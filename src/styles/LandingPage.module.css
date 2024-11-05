@@ -1,296 +1,384 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.landingpage{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap:7rem;
-    
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.landingpage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
 }
-.headerDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 56px;
-    /* margin-left: -50px; */
-    width: 95%;
+.headerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 56px;
+  /* margin-left: -50px; */
+  width: 95%;
 }
-.topnavbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+.topnavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
-.logonav{
-    display: flex;
-    align-items: center;
-    width: 10rem;
-height: 2.563rem;
-margin-left:11.938rem;
+.logonav {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  height: 2.563rem;
+  margin-left: 11.938rem;
+}
+.logonav > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 41px;
+  width: 41px;
+  border-radius: 50%;
+  background: #458ff6;
+  font-family: Mulish;
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32.63px;
+  text-align: left;
+}
+.logonav > span {
+  margin-left: 10px;
+  width: 6.7rem;
+  height: 30px;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.12px;
+  text-align: left;
+  color: #233348;
+}
+.rightmenu {
+  width: 34.063rem;
+  height: 23px;
+  display: flex;
+  gap: 20px;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.59px;
+  text-align: left;
+  color: #1f1534;
+}
+.leftsideicon {
+  position: absolute;
+  width: 131.58px;
+  height: 115px;
+  top: 160px;
+  left: -25px;
+}
+.headerImageDiv {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12.5rem;
+  width: 90%;
+}
+.headerText {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 27.81rem;
+  height: 21.125rem;
+}
+.headerText > h4 {
+  margin-top: 0px;
+  width: 427px;
+  height: 112px;
+  font-family: Mulish;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: left;
+}
+.headerText > p {
+  width: 445px;
+  height: 96px;
+  margin-top: -20px;
+  font-family: Mulish;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+  color: #7d7987;
+}
+.headerText > button {
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  opacity: 0px;
+  background: #458ff6;
+  color: white;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.serviceDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+  width: 90%;
+  position: relative;
+  /* background: yellow; */
+}
+.titlediv > h4 {
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+}
+.underline {
+  border: 2px solid black;
+  width: 3rem;
+  height: 0px;
+  margin: auto;
+  position: absolute;
+  left: 49%;
+  top: 11.5%;
+}
+.titlediv > p {
+  margin-top: 20px;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7d7987;
+  width: 59.5rem;
+  height: 60px;
+}
+.diffService {
+  width: 80%;
+  margin-top: 1rem;
+  height: 46.563rem;
+  display: grid;
+  z-index: 50;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
 
+.card {
+  height: 22.125rem;
+  width: 21.875rem;
+  border-radius: 20px;
+  background: white;
+  z-index: 50;
+  box-shadow: 10px 40px 50px 0px #e0e5f566;
 }
-.logonav>div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 41px;
-    width: 41px;
-    border-radius: 50%;
-    background: #458FF6;
-    font-family: Mulish;
-    color: white;
-font-size: 26px;
-font-weight: 700;
-line-height: 32.63px;
-text-align: left;
+.card > div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 30px;
+}
+.card > div > div {
+  height: 90px;
+  width: 91.98px;
+}
+.servicename {
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-left: 1rem;
+}
+.servicetext {
+  margin-left: 1rem;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+  width: 16.625rem;
+  height: 5.25rem;
+  margin-top: -1rem;
+  color: #7d7987 !important;
+}
+.servicedots {
+  position: absolute;
+  top: 56%;
+  right: 7%;
+  z-index: 10;
+}
+.bgFrame {
+  position: absolute;
+  left: -100px;
+  top: 10px;
+}
+.buttondiv {
+  margin: auto;
+}
+.learnmoreBtn {
+  width: 200px;
+  height: 60px;
+  color: #458ff6;
+  border: 1.4px solid #458ff6;
+  background: transparent;
+  border-radius: 55px;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.healthcareDiv {
+  width: 89%;
+  display: flex;
+  margin: auto;
+  gap: 6rem;
+}
+.healthcareImage {
+  width: 40.625rem;
+  height: 29.813rem;
+}
+.detailsDiv {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.detailsDiv > h4 {
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: left;
+  width: 30.063rem;
+  height: 7rem;
+}
+.healthcareText {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  width: 28.125rem;
+  height: 7.5rem;
+  margin-top: 0px !important;
+  color: #7d7987;
+}
 
+.gradientDiv {
+  height: 31.375rem;
+  width: 76.224rem;
+  margin: auto;
+  padding: 10px;
 }
-.logonav>span{
-    margin-left: 10px;
-    width: 6.7rem;
-height: 30px;
-font-family: Mulish;
-font-size: 24px;
-font-weight: 700;
-line-height: 30.12px;
-text-align: left;
-color: #233348;
-}
-.rightmenu{
-    width:34.063rem;
-height: 23px;
-display: flex;
-gap:20px;
-font-family: Mulish;
-font-size: 18px;
-font-weight: 400;
-line-height: 22.59px;
-text-align: left;
-color: #1F1534;
-
-}
-.leftsideicon{
-position: absolute;
-width: 131.58px;
-height: 115px;
-top: 160px;
-left:-25px;
-
-}
-.headerImageDiv{
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 12.5rem;
-    width: 90%;
-}
-.headerText{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 27.81rem;
-height: 21.125rem;
-
-}
-.headerText>h4{
-    margin-top: 0px; 
-    width: 427px;
-    height: 112px;
-    font-family: Mulish;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    text-align: left;
-        
-}
-.headerText>p{
-width: 445px;
-height: 96px;
-margin-top: -20px;
-font-family: Mulish;
-font-size: 21px;
-font-weight: 300;
-line-height: 32px;
-text-align: left;
-color: #7D7987;
-
-
-}
-.headerText>button{
-    width: 200px;
-height: 56px;
-border-radius: 55px;
-opacity: 0px;
-background: #458FF6;
-color: white;
-font-family: Mulish;
-font-size: 18px;
-font-weight: 700;
-line-height: 60px;
-text-align: left;
-display: flex;
-align-items: center;
-justify-content: center;
-border: none;
-cursor: pointer;
-}
-.serviceDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:10px;
-    margin: auto;
-    width: 90%;
-    position: relative;
-    /* background: yellow; */
-}
-.titlediv>h4{
-font-family: Mulish;
-font-size: 36px;
-font-weight: 700;
-line-height: 56px;
-text-align: center;
-
-}
-.underline{
-    border: 2px solid black;
-    width: 3rem;
-    height:0px;
-    margin: auto;
-    position: absolute;
-    left:49%;
-    top:11.5%
-
+.innerDiv {
+  display: flex;
+  flex-direction: column;
+  height: 425px;
+  width: 1120px;
+  background: aqua;
+  margin: auto;
+  border-radius: 24px;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
   
 }
-.titlediv>p{
-    margin-top: 20px;
-font-family: Mulish;
-font-size: 18px;
-font-weight: 300;
-line-height: 30px;
-color: #7D7987;
-width:59.5rem;
-height:60px;
+.innerDiv > h4 {
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: white;
 }
-.diffService{
-    width: 80%;
-    margin-top: 1rem;
-    height: 46.563rem;
-    display: grid;
-    z-index: 50;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    gap:20px;
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
 }
-
-.card{
-    height: 22.125rem;
-    width: 21.875rem;
-    border-radius: 20px;
-    background: white;
-    z-index: 50;
-   box-shadow: 10px 40px 50px 0px #e0e5f566;
-    
+.testimonialDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  animation: fadeInOut 1s ease-in-out;
 }
-.card>div{
+.detailsclient {
+  width: 420px;
+  display: flex;
+  align-items: flex-start;
+  font-family: Mulish;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: white;
+}
+.imageDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 50%;
+  padding: 7px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.founder {
+  font-family: Mulish;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 48px;
+  color: white;
+}
+.designation {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 48px;
+  color: white;
+}
+.navigation{
+    width:21.027rem;
+    height:1.25rem;
     display: flex;
-    align-items:flex-start;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 30px 30px;
-}
-.card>div>div{
-    height: 90px;
-    width: 91.98px;
-}
-.servicename{
-    font-family: Mulish;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 56px;
-    margin-left: 1rem;
-    
-}
-.servicetext{
-    margin-left: 1rem;
-font-family: Mulish;
-font-size: 16px;
-font-weight: 300;
-line-height: 28px;
-text-align: left;
-width: 16.625rem;
-height: 5.25rem;
-margin-top: -1rem;
-color: #7D7987 !important;
+    gap:10px;
+    margin: 3rem auto;
+    color:#458FF6;
+    cursor: pointer;
 
 }
-.servicedots{
-    position: absolute;
-    top:56%;
-    right:7%;
-    z-index: 10;
-}
-.bgFrame{
-    position: absolute;
-    left:-100px;
-    top:10px
-}
-.buttondiv{
-    margin: auto;
-}
-.learnmoreBtn{
-    width: 200px;
-height: 60px;
-color:#458FF6;
-border: 1.4px solid #458FF6;
-background: transparent;
-border-radius: 55px;
-font-family: Mulish;
-font-size: 18px;
-font-weight: 700;
-line-height: 60px;
-display: flex;
-align-items: center;
-justify-content: center;
-gap:6px
 
-}
-.healthcareDiv{
-    width: 89%;
-    display: flex;
-    margin: auto;
-    gap:6rem
-}
-.healthcareImage{
-    width: 40.625rem;
-height: 29.813rem;
-}
-.detailsDiv{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.detailsDiv>h4{
-    font-family: Mulish;
-font-size: 36px;
-font-weight: 700;
-line-height: 56px;
-text-align: left;
-width: 30.063rem;
-height: 7rem;
-
-}
-.healthcareText{
-font-family: Mulish;
-font-size: 18px;
-font-weight: 300;
-line-height: 30px;
-text-align: left;
-width: 28.125rem;
-height: 7.5rem;
-margin-top: 0px !important;
-color: #7D7987;
+/* animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+   
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
